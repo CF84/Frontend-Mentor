@@ -24,7 +24,6 @@ body {
     background-color: var(--vdblue-main-bg);
     height: 100vh;
     display: flex;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
 }
