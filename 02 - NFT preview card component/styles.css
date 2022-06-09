@@ -1,0 +1,131 @@
+:root {
+    --sblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --cyan-view-bg: hsl(178, 100%, 50%, 0.5);
+    --vdblue-main-bg: hsl(217, 54%, 11%);
+    --vdblue-card-bg: hsl(216, 50%, 16%);
+    --vdblue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--vdblue-main-bg);
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, #creatorname {
+    color: var(--white);
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+p {
+    display: inline-block;
+}
+
+#description, #days_left, #creator {
+    color: var(--sblue);
+}
+
+#description {
+    font-weight: 300;
+    margin: 15px 0 15px 0;
+}
+
+#eth_daysleft {
+    display: flex;
+    justify-content: space-between;
+}
+
+#eth_value, #days_left {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+#eth_value p, #days_left p {
+    margin-left: 10px;
+    height: 1.2rem;
+}
+
+#eth_value {
+    color: var(--cyan);
+}
+
+#container {
+    width: 340px;
+    height: auto;
+    background-color: var(--vdblue-card-bg);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#logo_container {
+    position: relative;
+    line-height: 0;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#logo_view {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+#logo_view:hover {
+    background: var(--cyan-view-bg) url(./images/icon-view.svg) no-repeat;
+    background-position: center;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-bottom: 1px solid var(--vdblue-line);
+}
+
+#creator {
+    display: flex;
+    align-items: center;
+}
+
+#creator img {
+    width: 40px;
+    height: auto;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+#creator p {
+    height: 1.2rem;
+    margin-left: 20px;
+}
