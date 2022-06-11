@@ -111,7 +111,7 @@ h1, #cancel, #proceed, #plan-type {
     color: var(--darkBlue);
 }
 
-@media screen and (width: 375px) {
+@media screen and (max-width: 375px) {
     body {
         background: url(./images/pattern-background-mobile.svg) left top repeat-x;
         background-color: var(--paleBlue);
