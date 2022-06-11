@@ -21,6 +21,7 @@ body {
     background: url(./images/pattern-background-desktop.svg) left top repeat-x;
     background-color: var(--paleBlue);
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
