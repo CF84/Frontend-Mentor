@@ -1,0 +1,127 @@
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    background: url(./images/pattern-background-desktop.svg) left top repeat-x;
+    background-color: var(--paleBlue);
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+h1, #plan-type {
+    color: var(--darkBlue);
+}
+
+h1, #description, #cancel, #proceed {
+    text-align: center;
+}
+
+#price, #description, #cancel {
+    color: var(--desaturatedBlue);
+}
+
+h1, #cancel, #proceed, #plan-type {
+    font-weight: 900;
+}
+
+#change {
+    font-size: 0.8rem;
+    margin: auto 0;
+    font-weight: 700;
+}
+
+#card-container, #cancel, #proceed, #description, #plan-container {
+    margin: 20px auto;
+}
+
+#card-container {
+    width: 390px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#illustration {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+#music-icon {
+    border-radius: 50%;
+    display: inline;
+}
+
+#plan-container, #cancel, #proceed, #description {
+    width: 80%;
+}
+
+#plan-container {
+    background-color: var(--veryPaleBlue);
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+#proceed {
+    background-color: var(--brightBlue);
+    color: var(--veryPaleBlue);
+    border-radius: 10px;
+    box-shadow: 0 30px 20px var(--paleBlue);
+}
+
+#cancel, #proceed {
+    display: block;
+    text-decoration: none;
+}
+
+#plan-container, #proceed, #cancel {
+    padding: 15px 0;
+}
+
+#change:hover {
+    text-decoration: none;
+    opacity: 70%;
+}
+
+#proceed:hover {
+    opacity: 70%;
+}
+
+#cancel:hover {
+    color: var(--darkBlue);
+}
+
+@media screen and (width: 375px) {
+    body {
+        background: url(./images/pattern-background-mobile.svg) left top repeat-x;
+        background-color: var(--paleBlue);
+    }
+
+    #card-container {
+        width: 320px;
+    }
+
+    #plan-container, #cancel, #proceed, #description {
+        width: 85%;
+    }
+}
