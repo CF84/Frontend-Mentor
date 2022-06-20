@@ -1,0 +1,136 @@
+/* variables */
+:root {
+    --color1: hsl(31, 77%, 52%); /* sedans card */
+    --color2: hsl(184, 100%, 22%); /* suvs card */
+    --color3: hsl(179, 100%, 13%); /* luxury card */
+    --color4: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --color5: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+* {
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+
+/* reset */
+body,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* base styles */
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--color5);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: var(--color5);
+}
+
+p {
+    color: var(--color4);
+    line-height: 1.6rem;
+    margin-bottom: 25px;
+}
+
+a {
+    display: block;
+    color: black;
+    background-color: var(--color5);
+    mix-blend-mode: screen;
+    border-radius: 50px;
+    height: 3rem;
+    width: 145px;
+    line-height: 3rem;
+    text-align: center;
+}
+
+a:hover {
+    color: var(--color5);
+    background-color: transparent;
+    border: 2px solid var(--color5);
+}
+
+.card {
+    padding: 50px;
+}
+
+.card:nth-of-type(1) {
+    background-color: var(--color1);
+}
+
+.card:nth-of-type(2) {
+    background-color: var(--color2);
+}
+
+.card:nth-of-type(3) {
+    background-color: var(--color3);
+}
+
+/* fonts */
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', serif;
+}
+
+/* mobile styles */
+main {
+    flex-direction: column;
+}
+
+.card {
+    max-width: 330px;
+}
+
+.card:nth-of-type(1) {
+    border-radius: 10px 10px 0 0;
+}
+
+.card:nth-of-type(3) {
+    border-radius: 0 0 10px 10px;
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+    main {
+        flex-direction: row;
+    }
+
+    .card {
+        max-width: 310px;
+    }
+    
+    .card:nth-of-type(1) {
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .card:nth-of-type(3) {
+        border-radius: 0 10px 10px 0;
+    }
+
+    p {
+        margin-bottom: 80px;
+    }
+}
