@@ -27,9 +27,8 @@ Users should be able to:
 ![](./screenshot2.jpg)
 
 ### Links
-
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/column-preview-card-component-using-flexbox-CRBeakIdNt)
+- Live Site URL: [GitHub Pages](https://cf84.github.io/Frontend-Mentor/05%20-%20Column%20preview%20card%20component/)
 
 ## My process
 
